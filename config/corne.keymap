@@ -63,7 +63,7 @@
 
         escape {
             bindings = <&kp ESCAPE>;
-            key-positions = <13 29>;
+            key-positions = <37 16>;
         };
 
         delete {
