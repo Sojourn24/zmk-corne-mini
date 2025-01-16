@@ -157,8 +157,13 @@
         };
 
         Apostrohe {
-            bindings = <&kp SQT>;
+            bindings = <&kp LS(SQT)>;
             key-positions = <21 22>;
+        };
+
+        double_q {
+            bindings = <&kp APOSTROPHE>;
+            key-positions = <34 33>;
         };
     };
 
