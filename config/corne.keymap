@@ -155,6 +155,11 @@
             bindings = <&paragreat>;
             key-positions = <20 21>;
         };
+
+        Apostrohe {
+            bindings = <&kp SQT>;
+            key-positions = <21 22>;
+        };
     };
 
     //
