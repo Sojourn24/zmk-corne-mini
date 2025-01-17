@@ -255,10 +255,10 @@
 
         layer_6 {
             bindings = <
-&trans  &kp Q  &kp W  &kp E   &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp A  &kp S  &kp D   &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp Z  &kp X  &trans  &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                      &trans  &kp SPACE  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp A   &kp S   &kp D   &kp F      &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &kp SPACE  &trans    &trans  &trans  &trans
             >;
 
             label = "Game";
