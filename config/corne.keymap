@@ -182,10 +182,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&kp ESCAPE  &kp Q       &kp W           &kp E               &kp R             &kp T           &kp Y          &kp U              &kp I                &kp O            &kp P          &none
-&none       &hm LGUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &kp G           &kp H          &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K  &hm RIGHT_ALT L  &hm RGUI SEMI  &none
-&none       &kp Z       &kp X           &kp C               &kp V             &kp B           &kp N          &kp M              &kp COMMA            &kp DOT          &kp ENTER      &kp ENTER
-                                        &lt 4 TAB           &mo 1             &kp LEFT_GUI    &kp BACKSPACE  &lt 2 SPACE        &lt 5 SLASH
+&none  &kp Q       &kp W           &kp E               &kp R             &kp T           &kp Y          &kp U              &kp I                &kp O            &kp P          &none
+&none  &hm LGUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &kp G           &kp H          &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K  &hm RIGHT_ALT L  &hm RGUI SEMI  &none
+&none  &kp Z       &kp X           &kp C               &kp V             &kp B           &kp N          &kp M              &kp COMMA            &kp DOT          &kp ENTER      &none
+                                   &lt 4 TAB           &mo 1             &kp LEFT_GUI    &kp BACKSPACE  &lt 2 SPACE        &lt 5 SLASH
             >;
         };
 
@@ -235,10 +235,10 @@
 
         layer_4 {
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &out OUT_TOG  &trans        &kp LC(LA(G))  &kp LC(SPACE)  &studio_unlock    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans         &tog 6         &trans            &trans  &trans  &trans  &trans  &trans  &trans
-                                    &none          &none          &none             &trans  &trans  &trans
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4      &trans  &trans  &trans  &trans  &trans  &none
+&none  &out OUT_TOG  &trans        &kp LC(LA(G))  &kp LC(SPACE)  &studio_unlock    &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans        &trans        &trans         &tog 6         &trans            &trans  &trans  &trans  &trans  &trans  &none
+                                   &none          &none          &none             &trans  &trans  &trans
             >;
 
             label = "CMDS";
@@ -246,10 +246,10 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &out OUT_TOG  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &tog 6  &trans  &trans  &trans        &trans
-                        &trans  &trans  &trans    &none   &none   &none
+&trans  &trans  &trans  &trans  &trans  &trans    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans        &trans        &trans        &out OUT_TOG  &none
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &tog 6        &trans        &trans        &trans        &none
+                        &trans  &trans  &trans    &none         &none         &none
             >;
         };
 
