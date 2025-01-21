@@ -235,9 +235,9 @@
 
         layer_4 {
             bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4      &trans  &trans  &trans  &trans  &trans  &none
-&none  &out OUT_TOG  &trans        &kp LC(LA(G))  &kp LC(SPACE)  &studio_unlock    &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans        &trans        &trans         &tog 6         &trans            &trans  &trans  &trans  &trans  &trans  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4      &trans  &trans  &trans  &trans  &trans             &none
+&none  &out OUT_TOG  &trans        &kp LC(LA(G))  &kp LC(SPACE)  &studio_unlock    &trans  &trans  &trans  &trans  &trans             &none
+&none  &trans        &trans        &trans         &tog 6         &trans            &trans  &trans  &trans  &trans  &kp LC(LS(ENTER))  &none
                                    &none          &none          &none             &trans  &trans  &trans
             >;
 
