@@ -182,15 +182,15 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&none  &kp Q       &kp W           &kp E               &kp R             &kp T           &kp Y          &kp U              &kp I                &kp O            &kp P          &none
-&none  &hm LGUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &kp G           &kp H          &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K  &hm RIGHT_ALT L  &hm RGUI SEMI  &none
-&none  &kp Z       &kp X           &kp C               &kp V             &kp B           &kp N          &kp M              &kp COMMA            &kp DOT          &kp ENTER      &none
-                                   &lt 4 TAB           &mo 1             &kp LEFT_GUI    &kp BACKSPACE  &lt 2 SPACE        &lt 5 SLASH
+&none  &kp Q       &kp W           &kp E               &kp R             &kp T    &kp Y          &kp U              &kp I                &kp O            &kp P          &none
+&none  &hm LGUI A  &hm LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &kp G    &kp H          &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K  &hm RIGHT_ALT L  &hm RGUI SEMI  &none
+&none  &kp Z       &kp X           &kp C               &kp V             &kp B    &kp N          &kp M              &kp COMMA            &kp DOT          &kp ENTER      &none
+                                   &kp TAB             &mo 7             &mo 1    &kp BACKSPACE  &lt 2 SPACE        &lt 5 SLASH
             >;
         };
 
-        NAV {
-            display-name = "Nav";
+        Numpad {
+            display-name = "Numpad";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
@@ -199,10 +199,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&none  &kp N1       &kp N2           &kp N3                     &kp N4              &kp N5           &kp N6  &kp N7              &kp N8                &kp N9            &kp N0            &none
-&none  &hm LGUI N0  &hm LEFT_ALT N4  &hm LEFT_CONTROL UP_ARROW  &hm LEFT_SHIFT DEL  &kp PAGE_UP      &kp N0  &hm RIGHT_SHIFT N4  &hm RIGHT_CONTROL N5  &hm RIGHT_ALT N6  &hm RGUI PAGE_UP  &none
-&none  &sys_reset   &kp LEFT         &kp DOWN                   &kp RIGHT_ARROW     &kp PAGE_DOWN    &trans  &kp N1              &kp N2                &kp N3            &kp PAGE_DOWN     &trans
-                                     &none                      &none               &none            &trans  &trans              &trans
+&none  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6      &kp N7  &kp N8  &kp N9  &kp N0  &none
+&none  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0    &kp N0      &kp N4  &kp N5  &kp N6  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans    &kp PERIOD  &kp N1  &kp N2  &kp N3  &trans  &trans
+                       &none   &none   &none     &trans      &trans  &trans
             >;
         };
 
@@ -235,10 +235,10 @@
 
         layer_4 {
             bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4      &trans  &trans  &trans  &trans  &trans             &none
-&none  &out OUT_TOG  &trans        &kp LC(LA(G))  &kp LC(SPACE)  &studio_unlock    &trans  &trans  &trans  &trans  &trans             &none
-&none  &trans        &trans        &trans         &tog 6         &trans            &trans  &trans  &trans  &trans  &kp LC(LS(ENTER))  &none
-                                   &none          &none          &none             &trans  &trans  &trans
+&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
+                       &none   &none   &none     &trans  &trans  &trans
             >;
 
             label = "CMDS";
@@ -262,6 +262,15 @@
             >;
 
             label = "Game";
+        };
+
+        CMDS {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans         &trans    &trans  &trans  &trans  &trans  &trans             &trans
+&trans  &trans  &trans  &trans  &kp LC(SPACE)  &trans    &trans  &trans  &trans  &trans  &trans             &trans
+&trans  &trans  &trans  &trans  &trans         &trans    &trans  &trans  &trans  &trans  &kp LC(LS(ENTER))  &trans
+                        &trans  &trans         &trans    &trans  &trans  &trans
+            >;
         };
     };
 
