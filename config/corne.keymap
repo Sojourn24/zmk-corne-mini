@@ -218,10 +218,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR            &kp PRCNT    &kp CARET  &kp AMPS         &kp ASTRK      &kp LEFT_PARENTHESIS  &kp RPAR       &trans
-&trans  &trans    &trans  &trans    &hm LEFT_SHIFT SQT  &kp GRAVE    &kp MINUS  &hm RCTRL EQUAL  &hm RALT LBKT  &hm RSHFT RBKT        &hm RGUI BSLH  &trans
-&trans  &trans    &trans  &trans    &trans              &kp TILDE    &kp UNDER  &kp PLUS         &kp LBRC       &kp RBRC              &kp PIPE       &trans
-                          &none     &none               &none        &trans     &trans           &trans
+&none  &kp EXCL       &kp AT     &kp HASH      &kp DLLR           &kp PRCNT    &kp CARET  &kp AMPS         &kp ASTRK      &kp LEFT_PARENTHESIS  &kp RPAR       &none
+&none  &kp LESS_THAN  &kp GRAVE  &kp KP_COMMA  &kp DOUBLE_QUOTES  &none        &kp MINUS  &hm RCTRL EQUAL  &hm RALT LBKT  &hm RSHFT RBKT        &hm RGUI BSLH  &none
+&none  &none          &kp TILDE  &none         &none              &none        &kp UNDER  &kp PLUS         &kp LBRC       &kp RBRC              &kp PIPE       &none
+                                 &trans        &trans             &trans       &none      &none            &none
             >;
         };
 
