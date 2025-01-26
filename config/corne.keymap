@@ -235,22 +235,24 @@
 
         Shortcuts {
             bindings = <
-&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
-                       &none   &none   &none     &trans  &trans  &trans
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+                     &none  &none  &none    &none  &none  &none
             >;
 
             label = "CMDS";
         };
 
-        ALT {
+        Shifted {
             bindings = <
 &none  &none  &none  &none        &none          &none      &none  &none  &none  &none  &none          &none
 &none  &none  &none  &none        &none          &none      &none  &none  &none  &none  &none          &none
 &none  &none  &none  &none        &none          &none      &none  &none  &none  &none  &kp LS(ENTER)  &none
                      &kp LS(TAB)  &kp LG(SPACE)  &kp DEL    &none  &none  &none
             >;
+
+            label = "ALT";
         };
 
         Gaming {
