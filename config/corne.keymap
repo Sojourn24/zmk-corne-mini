@@ -187,6 +187,8 @@
 &none  &kp Z       &kp X           &kp C               &kp V             &kp B              &kp N          &kp M              &kp COMMA            &kp DOT          &kp ENTER      &none
                                    &lt 4 TAB           &lt 1 SPACE       &lt 3 BACKSPACE    &kp BACKSPACE  &lt 2 SPACE        &lt 5 SLASH
             >;
+
+            label = "Ver=1.0.1";
         };
 
         Numpad {
